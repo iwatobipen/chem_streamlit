@@ -1,2 +1,1 @@
 conda-forge
-rdkit
