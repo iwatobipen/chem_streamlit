@@ -11,8 +11,7 @@ from PIL import Image
 from rdkit.Chem.Draw import rdDepictor
 rdDepictor.SetPreferCoordGen(True)
 
-
-rfc = pickle.load(open('rf.pkl', 'rb'))
+rfc = pickle.load(open('./rf.pkl', 'rb'))
 fpfunc = partial(SimilarityMaps.GetMorganFingerprint, radius=2)
 
 mols = [m for m in Chem.SDMolSupplier('./solubility.test.sdf')]
