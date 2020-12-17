@@ -10,8 +10,9 @@ from functools import partial
 from PIL import Image
 from rdkit.Chem.Draw import rdDepictor
 rdDepictor.SetPreferCoordGen(True)
-
-rfc = pickle.load(open('./rf.pkl', 'rb'))
+#rfc = pickle.load(open('rf.pkl', 'rb'))
+#for streamlit app
+rfc = pickle.load(open('/app/chem_streamlit/chemstreamlit/rf.pkl', 'rb'))
 fpfunc = partial(SimilarityMaps.GetMorganFingerprint, radius=2)
 
 mols = [m for m in Chem.SDMolSupplier('./solubility.test.sdf')]
