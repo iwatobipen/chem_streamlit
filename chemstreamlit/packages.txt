@@ -1,3 +1,0 @@
-python-rdkit
-librdkit1
-rdkit-data
