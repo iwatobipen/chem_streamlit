@@ -1,6 +1,6 @@
 import pickle
-import datamaker
 import streamlit as st
+import datamaker
 st.title('Streamlit + RDKit :rocket:')
 from rdkit import Chem
 from rdkit.Chem import Draw
